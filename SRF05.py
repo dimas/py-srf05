@@ -4,7 +4,7 @@ import time
 # A very simple Python interface to SFR05 module (probably will work with SFR04 too but I have no tried).
 # Just call measure() method and it will return you distance in centimeters or None.
 #
-# IMPORTANT NOTE: in order to read data from the sensore we need to measure width of an echo pulse
+# IMPORTANT NOTE: in order to read data from the sensor we need to measure width of an echo pulse
 # and we need to be accurate enough. This obviously is not going to work well if your CPU is heavily loaded.
 # Plus, Python with its GIL is just not the best environment for these things if you have other threads running.
 # But make no mistake - doing that in C is not a silver bullet either even if done properly with interrupts etc.
